@@ -148,14 +148,19 @@
     /* Code / BibTeX area */
     .bibtex-area {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      background: #ffffff;
-      color: #1e293b;
+      background: #ffffff;      /* or your dark style if you prefer */
+      color: #1e293b;           /* high contrast */
       border: 1px solid #cbd5e1;
-      border-radius: var(--radius-sm);
+      border-radius: 12px;
       padding: 14px 12px;
       line-height: 1.5;
       box-shadow: var(--shadow);
+      height: auto;             /* allow JS to control height */
+      min-height: 0;
+      overflow: hidden;         /* no inner scrollbar */
+      resize: none;             /* user won’t drag a smaller box */
     }
+
     .btn-copy {
       border-radius: 10px;
       font-weight: 600;
