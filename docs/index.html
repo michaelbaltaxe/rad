@@ -239,7 +239,7 @@
 
         <figure>
           <img src="teaser.jpg" alt="Teaser" >
-          <figcaption>Teaser: Context-aided monocular metric depth via retrieval-augmented cues.</figcaption>
+          <figcaption>RAD uses retrieved images and ground truth to improve dept estimation of underrepresented classes.</figcaption>
         </figure>
 
         <hr class="hr-soft">
@@ -250,19 +250,19 @@
         </p>
 
         <figure>
-          <img class="figure-img" src="system_architecture.jpg" alt="System architecture">
+          <img src="system_architecture.jpg" alt="System architecture">
           <figcaption>System architecture of RAD.</figcaption>
         </figure>
 
         <hr class="hr-soft">
 
-        <h3 class="h6 font-weight-bold mb-2">Uncertainty-aware retrieval flow</h3>
+        <h3 class="h6 font-weight-bold mb-2">Uncertainty-aware Retrieval Flow</h3>
         <p class="muted">
           Pixel-wise depth uncertainty is calculated in parallel to image segmentation. We use these to keep only highly uncertain segments, masking the rest of the image. Given the masked image we retrieve relevant examples from the context/training set using DINO descriptors.
         </p>
 
         <figure>
-          <img class="figure-img" src="retrieval_flow.jpg" alt="Uncertainty-aware retrieval">
+          <img src="retrieval_flow.jpg" alt="Uncertainty-aware retrieval">
           <figcaption>Uncertainty-aware retrieval of relevant context samples.</figcaption>
         </figure>
 
@@ -280,26 +280,26 @@
       <div class="section-card">
         <h2 class="section-title h4">Results</h2>
 
-        <h3 class="h6 font-weight-bold">Underrepresented classes evaluation</h3>
+        <h3 class="h6 font-weight-bold">Underrepresented Classes Evaluation</h3>
         <figure>
-          <img class="figure-img" src="underrepresented_table.jpg" alt="Underrepresented classes results">
+          <img src="underrepresented_table.png" alt="Underrepresented classes results">
           <figcaption>Performance on underrepresented classes.</figcaption>
         </figure>
 
         <hr class="hr-soft">
 
-        <h3 class="h6 font-weight-bold">All-classes evaluation</h3>
+        <h3 class="h6 font-weight-bold">All-classes Evaluation</h3>
         <figure>
-          <img class="figure-img" src="all_table.jpg" alt="All classes results">
+          <img src="all_table.png" alt="All classes results">
           <figcaption>Performance across all classes.</figcaption>
         </figure>
 
         <hr class="hr-soft">
 
-        <h3 class="h6 font-weight-bold">Qualitative results</h3>
+        <h3 class="h6 font-weight-bold">Qualitative Results</h3>
         <figure>
-          <img class="figure-img" src="qualitative.jpg" alt="Qualitative depth results">
-          <figcaption>Qualitative comparisons.</figcaption>
+          <img src="qualitative.png" alt="Qualitative depth results">
+          <figcaption>Qualitative results</figcaption>
         </figure>
       </div>
     </section>
