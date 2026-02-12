@@ -238,7 +238,7 @@
         </p>
 
         <figure>
-          <img width=60% src="teaser.png" alt="Teaser" >
+          <img width=65% src="teaser.png" alt="Teaser" >
           <figcaption>RAD uses retrieved images and ground truth to improve dept estimation of underrepresented classes.</figcaption>
         </figure>
 
@@ -270,8 +270,18 @@
 
         <h3 class="h6 font-weight-bold mb-2">Matched Cross-attention</h3>
         <p class="muted mb-0">
-          (a) shows the modified attention architecture that transfers information from the context stream to the input stream: for each token <em>j</em> in the input image, attention is computed using key/value matrices formed by concatenating the input’s keys/values with the matched context keys/values corresponding to <em>j</em>. (b) Matching tokens are those within a spatial neighborhood around the matched point in the context image.
+          (a) shows the modified attention architecture that transfers information from the context stream to the input stream: for each token <em>j</em> in the input image,
+          attention is computed using key/value matrices formed by concatenating the input’s keys/values with the matched context keys/values corresponding to <em>j</em>.
+          (b) Matching tokens are those within a spatial neighborhood around the matched point in the context image.
         </p>
+        
+        <figure>
+          <img width=75% src="attention.png" alt="Matched cross-attention">
+          <figcaption>Mathched cross-attention.</figcaption>
+        </figure>
+
+        <hr class="hr-soft">
+        
       </div>
     </section>
 
